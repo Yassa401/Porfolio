@@ -80,7 +80,7 @@ p{
 /*-- Définition des animations --*/
 @keyframes slidein {
   from{
-    margin-left: 50%;
+    margin-left: 40%;
   }
   to{
     margin-left: 0%;
