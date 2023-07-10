@@ -1,9 +1,7 @@
 body {
   background : linear-gradient(45deg, #373B44, #73C8A9);    
-  /* background-repeat: no-repeat ; */
   background-size : 200% ;
   animation : gradient 15s running ease-in infinite ;
-  /* background-attachment: fixed ; */
   margin : 0 ;
   padding : 0 ;
   font-family:Verdana, Geneva, Tahoma, sans-serif ;
@@ -38,10 +36,10 @@ a{
 
 a:hover{
   background-color: rgba(177, 169, 169, 0.686) ;
+  border-radius: 10px ;
   padding: 0.5em ;
   transition: 350ms ease-in-out ;
 }
-
 
 p{
   font-size : 20px ;
@@ -93,7 +91,17 @@ img{
 }
 
 .descr details{
-  padding-left : 1em ;
+  margin-left: 1.5em ;
+  margin-bottom: auto ;
+  padding : 0 1.5em ;
+  border-radius: 10px ;
+  background-color: rgba(0, 0, 0, 0.376) ;
+  color : whitesmoke ;
+  overflow: hidden ;
+}
+
+.descr summary{
+  padding: 1em 0 ;
 }
 
 .wrapper{
