@@ -1,5 +1,5 @@
 body {
-  background : linear-gradient(45deg, rgb(152, 12, 120), rgb(101, 25, 167) 60%, rgba(41, 41, 232, 0.861));    
+  background : linear-gradient(45deg, #373B44, #73C8A9);    
   /* background-repeat: no-repeat ; */
   background-size : 200% ;
   animation : gradient 15s running ease-in infinite ;
@@ -21,11 +21,11 @@ body {
   }
 }
 
-header{ 
+header{
+  display : flex ;
   margin: auto ;
   border-style : none ;
   padding : 1.2em ;
-  font-size : 300% ;
   background-color: rgba(0, 0, 0, 0.576) ;
   color :rgb(152, 12, 120) ;
   animation: slidein 2s ease-in-out;
@@ -49,10 +49,32 @@ p{
   animation: showup 6s ease-in-out ;
 }
 
+h5{
+  margin: 0% ;
+  padding: 2px ;
+  color: whitesmoke ;
+}
+
+img{
+  max-width : 100% ;
+  max-height: 100% ;
+  object-fit: contain ;
+}
+
 /*-- Définition des classes --*/
 
 .titles{
-  text-align:left ;
+  text-align: center ;
+}
+
+.nav-list{
+  list-style: none ;
+  display: flex ;
+}
+
+.nav-list li {
+  font-size : 20px ;
+  padding: 0px 10px ;
 }
 
 .action{
@@ -65,9 +87,16 @@ p{
   grid-template-columns: 3fr 2fr;
   gap : 50px ;
 }
-/*-- Définition des id --*/
 
-#about{
+.descr{
+  display: inline-flex ;
+}
+
+.descr details{
+  padding-left : 1em ;
+}
+
+.wrapper{
   border-style: none ;
   margin: 10% 5%;
   padding: 1em ;
@@ -77,23 +106,40 @@ p{
 
 }
 
-ul{
-  align-self: stretch;
-  align-items: baseline ;
+.no-background{
+  padding : 1.2em ;
 }
-li{
-  list-style-type: none;
-  font-size: 1.5em;
-  display: inline-block ;
-  margin : 0 10px ;
-
+.no-background i{
+  font-size : 800% ;
 }
 
-h5{
-  margin:0% ;
-  padding:2px ;
-  color: whitesmoke ;
-} 
+.no-background i:hover{
+  font-size : 900% ;
+  transition-duration: 400ms ;
+}
+
+.footer{
+  margin : auto ;
+  background: rgba(0, 0, 0, 0.576) ;
+  display : flex ;
+  align-items : center ;
+  justify-content: center ;
+}
+
+.footer .nav-list {
+  margin : auto ;
+  padding : 20px ;
+}
+
+.footer .nav-list li {
+  font-size : 1em ;
+}
+
+/*-- Définition des id --*/
+
+#projects h5 {
+  margin-bottom : 1em ;
+}
 
 /*-- Définition des animations --*/
 @keyframes slidein {

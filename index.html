@@ -2,59 +2,46 @@
 
 <html lang="fr">
 <head>
-    <meta charset="UTF-8" >
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     
-    <title>My first website ! </title>
+    <title>My Portfolio ! </title>
     <link rel="stylesheet" href="portfolio.css" >    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css">
 </head>
 
 <body>
-  
     <header>
-        <h2>
-          ASSAL YASSER
-        </h2>
+      <h2> ASSAL YASSER</h2>
+      <nav>
+        <div class="titles">
+           <ul class="nav-list">
+            <li>
+              <a href="#about">
+                <b>À propos</b>
+              </a>
+            </li>
+
+            <li>
+              <a href="#projects">
+              <b>Mes projets</b>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
     </header>
     <main>
-      <div class="titles">
-          <ul>
-            <li>
-            <a href="#about">
-              <b>À propos</b>
-            </a>
-              
-            </li>
-
-            <li>  
-              <a href="https://github.com/Yassa401?tab=repositories" target=_self title="this takes you to my github profile !">
-                <i class="fa fa-github"></i>
-                <b>GitHub</b>
-              </a>
-            </li>
-
-            <li>  
-              <a href="https://www.linkedin.com/in/yasser-assal/" target=_self title="this takes you to my linkedin profile !">
-                <i class="fa fa-linkedin"></i>
-                <b>Linkedin</b>
-              </a>
-            </li>
-            
-            <li>
-              <a href="mailto:assalyasser001@gmail.com" target=_self>
-                <b>me contacter !</b>
-              </a>
-            </li>
-          </ul>
-      </div>
       <!-- about me section !-->
-      <section id="about" class="action">
+      <section class="wrapper action" id="about">
         <h5>À Propos de moi</h5>
         <div class="inner">
           <div>
             <p>
-              Salut! Je m'appelle Assal Yasser et je suis étudiant en 2ème année de licence informatique, j'apprends différents paradigmes et langages de programmation
+              Salut! Je m'appelle Assal Yasser et je suis étudiant en dernière année de licence informatique, j'apprends différents paradigmes et langages de programmation
               dont le <em>C, Python, Html, Css </em> et <em>Javascript</em>.
             </p>
             <p>
@@ -65,7 +52,59 @@
           <img src="photo.jpg" alt="Photo de moi" height="400">
         </div>
       </section>
-    </main>  
+      <section class="wrapper action" id="projects">
+        <h5>Mes projets</h5>
+        <div class="descr">
+          <a href="https://github.com/Yassa401/Game_2048" target="_blank">
+          <img src="jeu.png" alt="Capture d'écran du jeu 2048" height="300"></a>
+          <details >
+            <summary>Jeu 2048</summary>
+            <ul>
+            <li>langages : C, BASH</li>
+            <li>Bibliothèque MLV</li>
+            <li>Environnement Linux</li>
+            </ul>
+          </details>
+        </div>
+      </section>
+      <section class="wrapper action">
+        <h5>Mes langages</h5>
+        <div class="no-background">
+          <i class="devicon-c-plain colored"></i>
+          <i class="devicon-html5-plain-wordmark colored"></i>
+          <i class="devicon-css3-plain-wordmark colored"></i>
+          <i class="devicon-javascript-plain colored"></i>
+            
+        </div>
+
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <ul class="nav-list">
+          <li>  
+            <a href="https://github.com/Yassa401?tab=repositories" target=_self title="this takes you to my github profile !">
+              <i class="fa fa-github"></i>
+              <b>GitHub</b>
+            </a>
+          </li>
+
+          <li>  
+            <a href="https://www.linkedin.com/in/yasser-assal/" target=_self title="this takes you to my linkedin profile !">
+              <i class="fa fa-linkedin"></i>
+              <b>Linkedin</b>
+            </a>
+          </li>
+          
+          <li>
+            <a href="mailto:assalyasser001@gmail.com" target=_self>
+              <i class="fa fa-envelope"></i>
+              <b>mail</b>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
 
 </body>
 </html>
