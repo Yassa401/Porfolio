@@ -1,10 +1,11 @@
-body {
-  background : linear-gradient(45deg, #373B44, #73C8A9);    
-  background-size : 200% ;
-  animation : gradient 15s running ease-in infinite ;
+* {
   margin : 0 ;
   padding : 0 ;
   font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+body {
+  background-color : #73C8A9;
 }
 
 @keyframes gradient {
@@ -87,6 +88,7 @@ img{
 }
 
 .descr{
+  margin-top: 2em;
   display: inline-flex ;
 }
 
