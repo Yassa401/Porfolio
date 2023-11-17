@@ -1,11 +1,22 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+
+:root{
+    --colorMain: #73C8A9;
+    --colorSecond: rgb(152, 12, 120);
+    --colorBackground: rgba(0, 0, 0, 0.576);
+}
+
 * {
   margin : 0 ;
   padding : 0 ;
-  font-family:Verdana, Geneva, Tahoma, sans-serif ;
+  font-family:'Open Sans', Geneva, Tahoma, sans-serif ;
+  font-size: 24px;
 }
 
 body {
-  background-color : #73C8A9;
+  background-color : var(--colorMain);
 }
 
 @keyframes gradient {
@@ -22,11 +33,12 @@ body {
 
 header{
   display : flex ;
+  justify-content: space-between;
   margin: auto ;
   border-style : none ;
   padding : 1.2em ;
-  background-color: rgba(0, 0, 0, 0.576) ;
-  color :rgb(152, 12, 120) ;
+  background-color: var(--colorBackground) ;
+  color : var(--colorSecond);
   animation: slidein 2s ease-in-out;
 }
 
@@ -61,6 +73,12 @@ img{
 }
 
 /*-- Définition des classes --*/
+
+.nav-bar{
+  display: flex;
+  margin: 0 3em;
+  padding: 0 1em;
+}
 
 .titles{
   text-align: center ;
@@ -97,20 +115,30 @@ img{
   margin-bottom: auto ;
   padding : 0 1.5em ;
   border-radius: 10px ;
-  background-color: rgba(0, 0, 0, 0.376) ;
+  background-color: var(--colorBackground) ;
   color : whitesmoke ;
   overflow: hidden ;
+  transition: 2s ease-in-out;
 }
 
-.descr summary{
-  padding: 1em 0 ;
+.descr-details-title{
+  width:fit-content;
+  padding: 1em 0;
+}
+
+.descr-details-title:hover, .descr a:hover{
+  cursor:pointer;
+}
+
+.descr-details{
+  padding-bottom: 10px;
 }
 
 .wrapper{
   border-style: none ;
   margin: 10% 5%;
   padding: 1em ;
-  background-color: rgba(0, 0, 0, 0.576) ; 
+  background-color: var(--colorBackground) ; 
   font-size: 24px ;
   text-align: left ;
 
@@ -130,7 +158,7 @@ img{
 
 .footer{
   margin : auto ;
-  background: rgba(0, 0, 0, 0.576) ;
+  background: var(--colorBackground) ;
   display : flex ;
   align-items : center ;
   justify-content: center ;
@@ -149,45 +177,4 @@ img{
 
 #projects h5 {
   margin-bottom : 1em ;
-}
-
-/*-- Définition des animations --*/
-@keyframes slidein {
-  from{
-    margin-left: 40%;
-  }
-  to{
-    margin-left: 0%;
-  }   
-}
-
-@keyframes slidein2 {
-  from{
-    margin-left: 50%;
-  }
-  to{
-    margin-left: 5%;
-  }
-    
-}
-
-@keyframes myshadowing {
-  0%,100%{
-    box-shadow: 10px 5px 5px red;
-  }
-  25%,75%{
-    box-shadow: 10px 5px 5px purple;
-  }
-  50%{
-    box-shadow: 10px 5px 5px blue;
-  }
-}
-
-@keyframes showup {
-  from{
-  color : rgba(0 , 0 , 0 ,0);
-  }
-  to{
-    color : rgba(245, 245, 245, 0.872) ;
-  }
 }
