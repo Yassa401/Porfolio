@@ -134,6 +134,9 @@ img{
   padding-bottom: 10px;
 }
 
+.descr-details li{
+  font-size: 20px;
+}
 .wrapper{
   border-style: none ;
   margin: 10% 5%;
